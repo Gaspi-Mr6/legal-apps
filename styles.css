@@ -1,0 +1,94 @@
+:root {
+  --bg: #14101f;
+  --card: #1f1830;
+  --border: #352a52;
+  --text: #f4f1ff;
+  --muted: #b9b0d6;
+  --accent: #ffd21e;
+  --green: #34c759;
+  --amber: #ff9f0a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: radial-gradient(1200px 600px at 50% -10%, #2b2145 0%, var(--bg) 60%);
+  color: var(--text);
+  min-height: 100vh;
+}
+.hero {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 20px 8px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.brand-icon { border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,.45); }
+.hero h1 { margin: 0; font-size: 2.4rem; letter-spacing: .04em; }
+.subtitle { margin: 4px 0 0; color: var(--muted); }
+main { max-width: 960px; margin: 0 auto; padding: 20px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.loading { color: var(--muted); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.35);
+}
+.game-icon { width: 72px; height: 72px; border-radius: 18px; }
+.game-letter {
+  display: grid;
+  place-items: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,.4);
+}
+.card-head { display: flex; align-items: center; gap: 10px; }
+.card-head h2 { margin: 0; font-size: 1.35rem; }
+.badge {
+  font-size: .68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+.badge-publicado { background: rgba(52,199,89,.18); color: #7ee2a0; border: 1px solid var(--green); }
+.badge-desarrollo { background: rgba(255,159,10,.15); color: #ffcf87; border: 1px solid var(--amber); }
+.tagline { margin: 0; font-weight: 700; color: var(--accent); }
+.desc { margin: 0; color: var(--muted); font-size: .95rem; flex: 1; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: .85rem;
+  text-decoration: none;
+}
+.btn-store { background: #fff; color: #111; }
+.btn-soon { background: rgba(255,255,255,.12); color: var(--muted); }
+.btn-ghost { border: 1px solid var(--border); color: var(--text); }
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+  color: var(--muted);
+  font-size: .9rem;
+  text-align: center;
+}
+footer a { color: var(--text); }
+.copy { opacity: .7; }
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.8rem; }
+}
