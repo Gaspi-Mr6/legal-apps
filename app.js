@@ -14,13 +14,13 @@ const APPS = [
   },
   {
     id: "ccifra",
-    name: "CCifra",
+    name: "CIFRA",
     tagline: "Concurso de letras",
     desc: "Quiz de palabras letra a letra: una definición por cada letra, acierta la palabra exacta y completa el círculo sin fallar.",
     icon: { type: "letter", letter: "C", bg: "linear-gradient(135deg,#0ea5e9,#6366f1)" },
     status: "desarrollo",
     playUrl: null,
-    legalUrl: null,
+    legalUrl: "cifra/privacy-policy.html",
   },
   {
     id: "encadenados",
